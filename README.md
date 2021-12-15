@@ -70,12 +70,12 @@ The current workaround is to move the project directory onto a different partiti
 There is a props file template provided at src/main/resources/props/sample.props.template. It needs to be renamed and modified in order for
 the application to work.
 
-1. Renaming:
+## Renaming:
 
 The sample.props.template file must be renamed for Lift to find it (https://www.assembla.com/wiki/show/liftweb/Properties). Renaming it to default.props
 should be the easiest way to get started.
 
-2. Filling in values:
+## Filling in values:
 
 transloadit.authkey
 transloadit.addImageTemplate
@@ -96,27 +96,33 @@ transloadit.addImageTemplate can be obtained by creating a template at transload
   }
 }
 
-*base_url*
+### *base_url*
 
 The base_url is used to calculate the callback url to give to the Open Bank Project API server. This should just be the
 base url used to access the social finance application. So if you're running a copy of the Sofit application at
 sofit.example.com over https, on the standard port, it would be "https://sofit.example.com".
 An example value for local development could be: http://127.0.0.1:8080 (as 8080 is the default Lift development port)
 
-*api_hostname*
+### *api_hostname*
 
 The api_hostname should be the base url of the Open Bank Project API. For example, https://api.openbankproject.com/api
 
-*obp_consumer_key*
-*obp_secret_key*
+### OBP Consumer key and secret
+
+ldfhudsaluhlifds hlds hi
+
+#### *obp_consumer_key*
+dsfs ex: 
+#### *obp_secret_key*
+sfsad ex :
 
 The keys are obtained by registering as a developer on the Open Bank Project API server located at "api_hostname".
 
 
 All in all, a props file could look something like:
 
-transloadit.authkey=89hs8fho98fsho8hsf48sfo98sh
-transloadit.addImageTemplate=s9fe8sh8h4sof98hf84s8fs48f4
+**transloadit.authkey=89hs8fho98fsho8hsf48sfo98sh**
+**transloadit.addImageTemplate=s9fe8sh8h4sof98hf84s8fs48f4**
 api_hostname=https://api.openbankproject.com/api
 obp_consumer_key=uodsifnodsfifdsliufdsliufdsfdsfsdfsx
 obp_secret_key=iuesbfiyvglxzgifg7eisgei7fglesfi
